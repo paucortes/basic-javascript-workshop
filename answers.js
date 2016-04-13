@@ -33,7 +33,7 @@ function charPosition(number, something) {
 // console.log(charPosition(56,"Something something"));
 // console.log(charPosition(0,""));
 
-// This function takes 2 numbers and returns the result of adding them both
+// This function takes 2 numbers and returns the result of adding them
 // If I pass a string and a number, it converts the number to a string
 // If I pass a number and a boolean, it converts the boolean into a number
 
@@ -41,8 +41,23 @@ function add(number1, number2) {
     return number1 + number2;
 };
 
-console.log(add(3,6));
-console.log(add(3,0));
-console.log(add("6",3));
-console.log(add("Pau",3));
-console.log(add(3, true));
+// console.log(add(3,6));
+// console.log(add(3,0));
+// console.log(add("6",3));
+// console.log(add("Pau",3));
+// console.log(add(3, true));
+
+// This function takes 2 numbers and returns the result of multiplying them
+// If I pass a number string and a number, it converts the number string to a number
+// If I pass a string and a number, it returs not a number
+// If I pass a number and a boolean, it converts the boolean into a number
+
+function multiply(number1, number2) {
+    return number1 * number2;
+};
+
+console.log(multiply(3,6));
+console.log(multiply(3,0));
+console.log(multiply("7",3));
+console.log(multiply("Pau",3));
+console.log(multiply(3, true));
