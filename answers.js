@@ -56,8 +56,39 @@ function multiply(number1, number2) {
     return number1 * number2;
 };
 
-console.log(multiply(3,6));
-console.log(multiply(3,0));
-console.log(multiply("7",3));
-console.log(multiply("Pau",3));
-console.log(multiply(3, true));
+// console.log(multiply(3,6));
+// console.log(multiply(3,0));
+// console.log(multiply("7",3));
+// console.log(multiply("Pau",3));
+// console.log(multiply(3, true));
+
+// This function takes two numbers and a string
+// If the string is ‘add’, it returns the sum of the numbers
+// If the string is ‘subtract’, it returns the difference
+// If the string is ‘mult’, it returns the product
+// If the string is ‘div’, it returns the ratio
+// Otherwise it returns 0
+
+function multiOperator(string, number1, number2) {
+    if (string === "add") {
+        return number1 + number2;
+    }
+    if (string === "substract") {
+        return number1 - number2;
+    }
+    if (string === "mult") {
+        return number1 * number2;
+    }
+    if (string === "div") {
+        return number1 / number2;
+    }
+    else {
+        return 0;
+    }
+};
+
+console.log(multiOperator("add", 5, 7));
+console.log(multiOperator("substract", 5, 7));
+console.log(multiOperator("mult", 5, 7));
+console.log(multiOperator("div", 5, 7));
+console.log(multiOperator("something else", 5, 7));
