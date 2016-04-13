@@ -93,7 +93,7 @@ function multiOperator(string, number1, number2) {
 // console.log(multiOperator("div", 5, 7));
 // console.log(multiOperator("something else", 5, 7));
 
-// Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs.
+// This function takes a string and a number, and returns the string repeated that many number of times
 
 function stringRepeater(number, text) {
     var i = 0;
@@ -103,6 +103,15 @@ function stringRepeater(number, text) {
     }
 }
 
-stringRepeater(5,"It's working");
-stringRepeater(2,"Two more times");
-stringRepeater(4,"And four more");
+// stringRepeater(5,"It's working");
+// stringRepeater(2,"Two more times");
+// stringRepeater(4,"And four more");
+
+// This function takes a string and returns the reverse of that string
+
+function reverseString(text) {
+    return text.split("").reverse().join("");
+}
+console.log(reverseString("See if this works"));
+console.log(reverseString("Something else"));
+console.log(reverseString(""));
