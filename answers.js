@@ -118,12 +118,33 @@ function reverseString(text) {
 // console.log(reverseString(""));
 
 // This function takes a number and returns its factorial. Negative numbers return an error
+
 function factorial(n) {
   if (n === 0) {
     return 1;
   }
   return n * factorial(n - 1);
-};
-console.log(factorial(6));
-console.log(factorial(3));
-console.log(factorial(25));
+}
+
+// console.log(factorial(6));
+// console.log(factorial(3));
+// console.log(factorial(25));
+
+// This function takes a phrase, and returns the longest word in that phrase
+// If the phrase contains more than one such word, it returns the first occurrence
+
+function longestWord(phrase) {
+    var separatedWords = phrase.split(" ");
+    var longest = 0;
+    var word;
+    for (var i = 0; i<separatedWords.length; i++) {
+        if (longest < separatedWords[i].length) {
+            longest = separatedWords[i].length;
+            word = separatedWords[i];
+        }
+    }
+    console.log(word);
+}
+
+longestWord("Otherwise it does not work it seems");
+longestWord("Well, it seems to be working finally");
