@@ -146,5 +146,18 @@ function longestWord(phrase) {
     console.log(word);
 }
 
-longestWord("Otherwise it does not work it seems");
-longestWord("Well, it seems to be working finally");
+// longestWord("Otherwise it does not work it seems");
+// longestWord("Well, it seems to be working finally");
+
+// This function takes a phrase and returns the same phrase with every word capitalized
+
+function capitalizeFirstLetters(phrase) {
+    var separatedWords = phrase.toLowerCase().split(" ");
+    var newArr = [];
+    for (var i = 0; i<separatedWords.length; i++) {
+        newArr.push(separatedWords[i].charAt(0).toUpperCase() + separatedWords[i].substring(1));
+    }
+    return newArr.join(" ");
+}
+console.log(capitalizeFirstLetters("We will see if this works OR not"));
+console.log(capitalizeFirstLetters("Well, it seems to be working as far as I can tell. Yay!!"));
