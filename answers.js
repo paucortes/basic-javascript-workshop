@@ -112,6 +112,18 @@ function stringRepeater(number, text) {
 function reverseString(text) {
     return text.split("").reverse().join("");
 }
-console.log(reverseString("See if this works"));
-console.log(reverseString("Something else"));
-console.log(reverseString(""));
+
+// console.log(reverseString("See if this works"));
+// console.log(reverseString("Something else"));
+// console.log(reverseString(""));
+
+// This function takes a number and returns its factorial. Negative numbers return an error
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+};
+console.log(factorial(6));
+console.log(factorial(3));
+console.log(factorial(25));
