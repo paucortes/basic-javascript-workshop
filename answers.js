@@ -159,5 +159,29 @@ function capitalizeFirstLetters(phrase) {
     }
     return newArr.join(" ");
 }
-console.log(capitalizeFirstLetters("We will see if this works OR not"));
-console.log(capitalizeFirstLetters("Well, it seems to be working as far as I can tell. Yay!!"));
+// console.log(capitalizeFirstLetters("We will see if this works OR not"));
+// console.log(capitalizeFirstLetters("Well, it seems to be working as far as I can tell. Yay!!"));
+
+// This function takes an array and returns the largest number of the array
+
+function largestNumberInArray(arr) {
+    var largest = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if(largest < arr[i]){
+            largest = arr[i]
+        }
+    }
+    return largest;
+}
+console.log(largestNumberInArray([4,64,1232,8,4]));
+console.log(largestNumberInArray([34,0,-12,false,(5*20)]));
+console.log(largestNumberInArray([2444,(34*37),(12*23424/34),4]));
+
+/* Another way of doing what I was trying to do...
+function test(){
+    var args = [].slice.call(arguments)
+    return args;
+}
+
+console.log(test(2,3,4,5,6,7)) */
+
