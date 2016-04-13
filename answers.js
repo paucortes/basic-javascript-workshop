@@ -5,14 +5,14 @@
 
 function firstCharacter(anyString) {
     return anyString.substring(0,1);
-};
+}
 // console.log(firstCharacter("My name is Pau"));
 
 // This function takes a string and returns the last letter using .substring
 
 function lastCharacter(anyString) {
     return anyString.substring(anyString.length -1,anyString.length);
-};
+}
 // console.log(lastCharacter("My name is Pau"));
 // console.log(lastCharacter("Whatever"));
 // console.log(lastCharacter("33"));
@@ -25,7 +25,7 @@ function charPosition(number, something) {
         console.log("The number is larger than the length of the string!");
     }
     return something.substring(number,number+1);
-};
+}
 // console.log(charPosition(0,"Something something"));
 // console.log(charPosition(7,"Something something"));
 // console.log(charPosition(15,"Something something"));
@@ -39,7 +39,7 @@ function charPosition(number, something) {
 
 function add(number1, number2) {
     return number1 + number2;
-};
+}
 
 // console.log(add(3,6));
 // console.log(add(3,0));
@@ -54,7 +54,7 @@ function add(number1, number2) {
 
 function multiply(number1, number2) {
     return number1 * number2;
-};
+}
 
 // console.log(multiply(3,6));
 // console.log(multiply(3,0));
@@ -85,10 +85,24 @@ function multiOperator(string, number1, number2) {
     else {
         return 0;
     }
-};
+}
 
-console.log(multiOperator("add", 5, 7));
-console.log(multiOperator("substract", 5, 7));
-console.log(multiOperator("mult", 5, 7));
-console.log(multiOperator("div", 5, 7));
-console.log(multiOperator("something else", 5, 7));
+// console.log(multiOperator("add", 5, 7));
+// console.log(multiOperator("substract", 5, 7));
+// console.log(multiOperator("mult", 5, 7));
+// console.log(multiOperator("div", 5, 7));
+// console.log(multiOperator("something else", 5, 7));
+
+// Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs.
+
+function stringRepeater(number, text) {
+    var i = 0;
+    while (i<number) {
+        i++;
+        console.log(text);
+    }
+}
+
+stringRepeater(5,"It's working");
+stringRepeater(2,"Two more times");
+stringRepeater(4,"And four more");
