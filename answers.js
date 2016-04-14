@@ -213,4 +213,22 @@ function sumOfAllNumbers(arr) {
     }
     console.log(total)
 }
-sumOfAllNumbers([2,3,4,5,6]);
+// sumOfAllNumbers([2,3,4,5,6]);
+
+// This function takes two arrays, and returns an array of all elements that are only in one array
+
+function onlyNumbersInBoth(arr1, arr2) {
+    var arr3 = [];
+    for (var i = 0; i < arr1.length; i++) {
+        if(arr2.indexOf(arr1[i]) === -1) {
+            arr3.push(arr1[i]);
+        }
+    }
+    for (var j = 0; j < arr2.length; j++) {
+        if(arr1.indexOf(arr2[j]) === -1) {
+            arr3.push(arr2[j]);
+        }
+    }
+    return arr3;
+}
+console.log(onlyNumbersInBoth([1,2,4,6,8],[3,4,6,7,9,10]));
