@@ -231,4 +231,15 @@ function onlyNumbersInBoth(arr1, arr2) {
     }
     return arr3;
 }
-console.log(onlyNumbersInBoth([1,2,4,6,8],[3,4,6,7,9,10]));
+// console.log(onlyNumbersInBoth([1,2,4,6,8],[3,4,6,7,9,10]));
+
+// This function takes an array and a function as arguments and return a new array that maps every element of the input array by passing it through the function
+
+function arrayMapping(arr1, func1) {
+    var arr2 = [];
+    for (var i=0; i<arr1.length; i++) {
+        arr2.push(func1(arr1[i]));
+    }
+    return arr2;
+}
+console.log(arrayMapping([2,3,4,5,6,7,8], function(ele){return ele * 2}));
