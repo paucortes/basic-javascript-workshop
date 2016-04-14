@@ -173,9 +173,9 @@ function largestNumberInArray(arr) {
     }
     return largest;
 }
-console.log(largestNumberInArray([4,64,1232,8,4]));
-console.log(largestNumberInArray([34,0,-12,false,(5*20)]));
-console.log(largestNumberInArray([2444,(34*37),(12*23424/34),4]));
+// console.log(largestNumberInArray([4,64,1232,8,4]));
+// console.log(largestNumberInArray([34,0,-12,false,(5*20)]));
+// console.log(largestNumberInArray([2444,(34*37),(12*23424/34),4]));
 
 /* Another way of doing what I was trying to do...
 function test(){
@@ -185,3 +185,20 @@ function test(){
 
 console.log(test(2,3,4,5,6,7)) */
 
+// This is a function that takes an array, and returns a filtered array that contains only the truthy values from the initial array
+
+function filterArrayByTruthy(arr) {
+    var truthy = [];
+    for (var i = 0; i < arr.length; i++) {
+        if(arr[i]) {
+            truthy.push(arr[i]);
+        }
+    }
+    return truthy;
+    
+    // This would be using the .filter
+    // return arr.filter(function(element){
+    //     if(!element){
+    //         return true;
+}
+console.log(filterArrayByTruthy([3,0,false,7,9,undefined]));
