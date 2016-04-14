@@ -201,4 +201,16 @@ function filterArrayByTruthy(arr) {
     //     if(!element){
     //         return true;
 }
-console.log(filterArrayByTruthy([3,0,false,7,9,undefined]));
+// console.log(filterArrayByTruthy([3,0,false,7,9,undefined]));
+
+
+// This function takes an array of numbers, and returns the sum of all the numbers in the array
+
+function sumOfAllNumbers(arr) {
+    var total = 0
+    for (var i = 0; i < arr.length; i++) {
+        total = total + arr[i];
+    }
+    console.log(total)
+}
+sumOfAllNumbers([2,3,4,5,6]);
